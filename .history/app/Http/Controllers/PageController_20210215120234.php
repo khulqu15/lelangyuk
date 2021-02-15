@@ -1,0 +1,43 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Models\CategoryProduct;
+use App\Models\Product;
+use Illuminate\Http\Request;
+
+class PageController extends Controller
+{
+    public $product;
+    public $ctr;
+
+    public function __construct(Product $product, CategoryProduct $category)
+    {
+        $this->ctr = $category;
+        $this->product = $product;
+    }
+
+    public function home(Request $request)
+    {
+        $query = $this->product->query();
+        if($request->get('name') && $request->get('name') != '' && $request->get('name') != null) {
+            $products = $query->where('name', 'LIKE', "%$request->get('name')%");
+        }
+        if($request->get('category') && $request->get('category') != '' && $request->get('name') != null) {
+            $products = $query->where('category_id', $request->get('category'));
+        }
+        $products = $query->paginate(6);
+        $categories = $this->ctr->paginate(4);
+        return view('welcome', compact('products', 'categories'));
+    }
+
+    public function products(Request $request)
+    {
+
+    }
+
+    public function product(Request $request)
+    {
+
+    }
+}

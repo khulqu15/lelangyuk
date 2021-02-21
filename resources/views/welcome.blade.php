@@ -51,7 +51,9 @@
                         </div>
                     </form>
                 </div>
-                <div class="pt-5 pb-3">
+            </div>
+            <div class="col-md-12 text-center">
+                <div class="pt-5 pb-3 d-inline-block">
                     <a href="{{ route('home') }}" class="btn {{ request()->get('category') == null ? 'btnm-primary' : 'btnm-light' }} btnm-primary my-md-0 my-2 mx-2 px-4 py-2">Semua</a>
                     @foreach ($categories as $category)
                         <a href="{{ route('home', ['category' => $category->id]) }}"

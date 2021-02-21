@@ -55,7 +55,7 @@
                     <a href="{{ route('home') }}" class="btn {{ request()->get('category') == null ? 'btnm-primary' : 'btnm-light' }} btnm-primary my-md-0 my-2 mx-2 px-4 py-2">Semua</a>
                     @foreach ($categories as $category)
                         <a href="{{ route('home', ['category' => $category->id]) }}"
-                        class="btn {{ request()->get('category') == $category->id ? 'btnm-primary' : 'btnm-light' }} my-md-0 my-2 mx-2 px-4 py-2">{{ $category->name }}</a>
+                        class="btn {{ request()->get('category') == $category->id ? 'btnm-primary' : 'btnm-light' }} mb-md-2 mt-md-0 my-2 mx-2 px-4 py-2">{{ $category->name }}</a>
                     @endforeach
                 </div>
             </div>

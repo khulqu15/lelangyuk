@@ -29,6 +29,11 @@ class Product extends Model
         return $this->hasMany(Auction::class, 'product_id');
     }
 
+    public function Transaction()
+    {
+        return $this->hasMany(Transaction::class);
+    }
+
     // public function getCloseAttribute()
     // {
     //     $date = Carbon::create($this->attributes['close'])->isoFormat('dddd, D MMMM Y');

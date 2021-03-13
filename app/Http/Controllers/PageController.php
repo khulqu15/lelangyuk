@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\CategoryProduct;
 use App\Models\Product;
+use App\Models\Transaction;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -33,6 +34,13 @@ class PageController extends Controller
         $categories = $this->ctr->paginate(4);
         return view('welcome', compact('products', 'categories'));
     }
+
+    public function dashboardTransaction(Request $request)
+    {
+        $transaction = Transaction::query();
+        return view('transactions', compact('transaction'));
+    }
+
 
     public function products(Request $request)
     {

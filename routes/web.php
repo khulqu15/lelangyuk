@@ -4,8 +4,10 @@ use App\Http\Controllers\AuctionController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\TransactionController;
 use App\Http\Controllers\UserController;
 use App\Http\Livewire\Page\Home;
+use App\Models\Transaction;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -24,6 +26,14 @@ Route::get('/', [PageController::class, 'home'])->name('home');
 Route::get('products', [PageController::class, 'products'])->name('products');
 Route::get('contact', [PageController::class, 'contact'])->name('contact');
 Route::get('product/{id}', [PageController::class, 'product'])->name('product');
+
+Route::get('transaction/auction/{auctionId}', [TransactionController::class, 'create'])->name('transaction.create');
+Route::get('transaction/{id}/auction/{auctionId}', [TransactionController::class, 'edit'])->name('transaction.edit');
+Route::post('transaction', [TransactionController::class, 'store'])->name('transaction.store');
+Route::patch('transaction/{id}', [TransactionController::class, 'update'])->name('transaction.update');
+Route::delete('transaction/{id}', [TransactionController::class, 'destroy'])->name('transaction.destroy');
+Route::get('transaction/{id}/final', [TransactionController::class, 'finalization'])->name('transaction.final');
+
 Route::get('profile', [PageController::class, 'profile'])->name('profile');
 Route::post('auction', [AuctionController::class, 'store'])->name('addAuction');
 Route::post('update/user/{id}', [UserController::class, 'update'])->name('updateUser');
@@ -36,6 +46,7 @@ Route::group(['middleware' => ['multi.auth', 'auth:sanctum', 'verified']], funct
     Route::get('/dashboard', [PageController::class, 'dashboard'])->name('dashboard');
     Route::get('/dashboard-product', [PageController::class, 'dashboardProduct'])->name('dashboard.product');
     Route::get('/dashboard-auction', [PageController::class, 'dashboardAuction'])->name('dashboard.auction');
+    Route::get('/dashboard-transaction', [PageController::class, 'dashboardTransaction'])->name('dashboard.transaction');
     Route::get('/dashboard-user', [PageController::class, 'dashboardUser'])->name('dashboard.user');
     Route::get('/edit/product/{id}', [PageController::class, 'editProduct'])->name('editProduct');
     Route::post('/store/product', [ProductController::class, 'store'])->name('storeProduct');

@@ -1,26 +1,15 @@
-@extends('layouts.general')
+<x-app-layout>
+    <x-slot name="header">
+        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+            {{ __('Transactions') }}
+        </h2>
+    </x-slot>
 
-@section('title', 'Products')
-
-@section('content')
-<div class="pt-5">
-    <div class="pt-5 mt-5">
-        <div class="container-fluid mt-5 pt-3 bg-light">
-            <div class="container">
-                <div class="row mt-4">
-                    @foreach ($products as $product)
-                    <div class="col-md-4 col-sm-6 my-2">
-                        <livewire:components.card-product :product="$product"/>
-                    </div>
-                    @endforeach
-                    <div class="col-12 text-right py-4 mt-4">
-                        <div class="d-inline-block mb-4">
-                            {{ $products->links() }}
-                        </div>
-                    </div>
-                </div>
+    <div class="py-12">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
+                <livewire:dashboard.table.transactions/>
             </div>
         </div>
     </div>
-</div>
-@endsection
+</x-app-layout>

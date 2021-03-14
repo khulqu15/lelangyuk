@@ -37,8 +37,8 @@ class PageController extends Controller
 
     public function dashboardTransaction(Request $request)
     {
-        $transaction = Transaction::query();
-        return view('transactions', compact('transaction'));
+        $transactions = Transaction::paginate(10);
+        return view('transactions', compact('transactions'));
     }
 
 

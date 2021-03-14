@@ -21,7 +21,7 @@
                         <td>{{ $transaction->user->name }}</td>
                         <td>{{ $transaction->Auction->price }},-</td>
                         <td>{{ $transaction->Auction->Product->name }}</td>
-                        <td>{{ $transaction->id }}</td>
+                        <td>{{ $transaction->status == null ? 'menunggu verifikasi' : $transaction->status }}</td>
                         <td>
                             <button onclick="return confirm('Yakin ?') || event.stopImmediatePropagation()" wire:click="deleteData({{ $transaction->id }})" class="btn btn-danger btn-sm my-2 p-2">
                                 <i class="fas fa-trash"></i>

@@ -7,7 +7,7 @@
 <div class="container py-5">
     <div class="row pt-5 pb-4 mt-4">
         <div class="col-md-6 pt-5 mt-5">
-            <h1 class="viga">Lelang terpercaya hanya di Lelangind</h1>
+            <h1 class="viga">Lelang terpercaya hanya di Lelangyuk</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis ornare dui, quis molestie </p>
             <button class="btn btnm-primary">Lihat Produk</button>
             <button class="btn btnm-light mx-2">Selengkapnya</button>
@@ -21,7 +21,7 @@
 <div class="container mt-5">
     <div class="row">
         <div class="col-md-12">
-            <h1 class="viga">Produk Lelangind</h1>
+            <h1 class="viga">Produk Lelangyuk</h1>
         </div>
     </div>
 </div>
@@ -79,7 +79,7 @@
     <div class="row py-5">
         <div class="col-md-8 offset-md-2 text-center">
             <img src="{{ asset('img/logo-white.png') }}" class="d-inline-block" width="60px" alt="Logo">
-            <h2 class="viga d-inline-block text-white mb-0 position-relative" style="top: 9px">Lelangind</h2>
+            <h2 class="viga d-inline-block text-white mb-0 position-relative" style="top: 9px">Lelangyuk</h2>
         </div>
     </div>
 </div>

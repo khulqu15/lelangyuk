@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Lelangind | @yield('title')</title>
+        <title>Lelangyuk | @yield('title')</title>
 
         <link rel="shortcut icon" href="{{ asset('img/logo.png') }}" type="image/x-icon">
 

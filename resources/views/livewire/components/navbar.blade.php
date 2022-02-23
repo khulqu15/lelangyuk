@@ -4,7 +4,7 @@
             <div class="col-6 px-5">
                 <div class="d-inline-block cursor-point" onclick="window.location = '{{ route("home") }}'">
                     <img src="{{ asset('img/logo.png') }}" class="d-inline-block" width="46px" alt="Logo">
-                    <h4 class="viga d-inline-block position-relative ml-3 d-md-inline-block d-none" style="top: 5px; left: 10px">Lelangind</h4>
+                    <h4 class="viga d-inline-block position-relative ml-3 d-md-inline-block d-none" style="top: 5px; left: 10px">Lelangyuk</h4>
                 </div>
             </div>
             <div class="col-6 px-5 text-right">

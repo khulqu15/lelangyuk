@@ -5,16 +5,16 @@ body {
     font-family: 'Viga', sans-serif;
 }
 .bgm-primary {
-    background-color: #E62A2A !important;
+    background-color: #0ED452 !important;
 }
 .bgm-primary-light {
-    background-color: #FFCECE !important;
+    background-color: #d8ffe5 !important;
 }
 .btnm-primary {
     border: none;
     border-radius: 0px !important;
     transition: all .3s ease-in-out;
-    background-color: #E62A2A !important;
+    background-color: #0ED452 !important;
     padding: 1rem 2rem;
     color: white;
 }
@@ -38,7 +38,7 @@ body {
 }
 .btnm-primary:hover {
     color: white !important;
-    background-color: #c01c1c !important;
+    background-color: #037029 !important;
 }
 .btnm-light {
     border: none;
@@ -53,7 +53,7 @@ body {
     background-color: #c2c2c2 !important;
 }
 .textm-primary {
-    color: #E62A2A !important;
+    color: #0ED452 !important;
 }
 .textm-gray {
     color: gray !important;
@@ -96,7 +96,7 @@ body {
 .card-product .image {
     width: 100%;
     height: 170px;
-    background-color: #f36c6c;
+    background-color: #0ac74c;
     overflow: hidden;
 }
 .card-product .image img {
@@ -110,8 +110,8 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50px;
-    background-color: #fccece;
-    color: #E62A2A;
+    background-color: #daffe7;
+    color: #0ED452;
     position: absolute;
     line-height: 53px;
     text-align: center;
@@ -122,15 +122,15 @@ body {
 }
 .card-product .like:hover {
     cursor: pointer;
-    background-color: #c01c1c;
-    color: #FFCECE;
+    background-color: #037029;
+    color: #d8ffe5;
 }
 .card-product .liked {
     width: 50px;
     height: 50px;
     border-radius: 50px;
-    background-color: #E62A2A;
-    color: #fccece;
+    background-color: #0ED452;
+    color: #d0ffe0;
     position: absolute;
     line-height: 53px;
     text-align: center;
@@ -141,8 +141,8 @@ body {
 }
 .card-product .like:hover {
     cursor: pointer;
-    color: #c01c1c;
-    background-color: #FFCECE;
+    color: #037029;
+    background-color: #d8ffe5;
 }
 .image-fit-card {
     width: 100%;
@@ -157,7 +157,7 @@ body {
 }
 
 .bg-hammer-bottom {
-    background: url('../img/wallpaper/hammer.png');
+    background: url('../img/wallpaper/shop.jpg');
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -365,7 +365,7 @@ a {
     display: inline-block;
     border-radius: 80px;
     overflow: hidden !important;
-    background-color: #E62A2A;
+    background-color: #0ED452;
 }
 .ellipsis-menu-right {
     top: 0;

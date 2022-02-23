@@ -7,7 +7,7 @@
         <div class="row">
             <div class="col-md-4 px-0">
                 <div class="full-page position-relative">
-                    <img src="{{ asset('img/user/valen.png') }}" alt="Developer" class="image-fit-card position-absolute" style="opacity: .5">
+                    <img src="{{ asset('img/user/ayuk.png') }}" alt="Developer" class="image-fit-card position-absolute" style="opacity: .5">
                 </div>
             </div>
             <div class="col-md-6 offset-md-1 px-5 py-5">

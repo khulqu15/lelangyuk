@@ -19,7 +19,7 @@ class ProductTableSeeder extends Seeder
             $product->name = 'Produk'.$i+5;
             $product->close = "2020-0$i-0$i";
             $product->picture = "$i.png";
-            $product->price = $i+5 ."00000";
+            $product->price = $i*50000;
             $product->category_id = $i;
             $product->description = "Lorem ipsum dolor sit amet, los protokaos el mindo elva vin de ala manacos";
             $product->save();

@@ -53,7 +53,7 @@
                 </div>
             </div>
             <div class="col-md-7 py-5 text-center">
-                <p class="text-gray">@ 2021 Developed by Valennaura</p>
+                <p class="text-gray">@ 2021 Developed by NENG AYUK WULANDARI</p>
             </div>
         </div>
     </div>
